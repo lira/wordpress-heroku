@@ -56,11 +56,14 @@
 		  "wpackagist-plugin/wordfence",
 		  "wpackagist-plugin/nginx-helper",
 		  "wpackagist-plugin/sendgrid-email-delivery-simplified",
-		  "humanmade/s3-uploads"
+		  "humanmade/s3-uploads",
+		  "wpackagist-plugin/woocommerce"
 		],
 		"web/app/plugins/{$name}/": [
 		  "wpackagist-plugin/debug-bar",
-		  "wpackagist-plugin/all-in-one-seo-pack"
+		  "wpackagist-plugin/all-in-one-seo-pack",
+		  "wpackagist-plugin/woocommerce-mercadopago"
+
 		],
 		"web/app/themes/{$name}/": [
 		  "type:wordpress-theme"
