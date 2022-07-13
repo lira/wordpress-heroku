@@ -148,11 +148,11 @@ if (getenv('WP_ENV') != "development") {
  * Without this, logins will only work in the DOMAIN_CURRENT_SITE.
  * Reauth is required on all sites in the network after this.
  */
-define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE'));
-if (env('WP_MULTISITE_MAIN_DOMAIN')) {
+define('WP_ALLOW_MULTISITE', getenv('WP_ALLOW_MULTISITE'));
+if (getenv('WP_MULTISITE_MAIN_DOMAIN')) {
     define('MULTISITE', true);
     define('SUBDOMAIN_INSTALL', true);
-    define('DOMAIN_CURRENT_SITE', env('WP_MULTISITE_MAIN_DOMAIN'));
+    define('DOMAIN_CURRENT_SITE', getenv('WP_MULTISITE_MAIN_DOMAIN'));
     define('PATH_CURRENT_SITE', '/');
     define('SITE_ID_CURRENT_SITE', 1);
     define('BLOG_ID_CURRENT_SITE', 1);
